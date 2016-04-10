@@ -13,6 +13,12 @@ local function flip_v(player_index)
 				local dir = ents[i].direction or 0
 				if ents[i].name == "curved-rail" then
 					ents[i].direction = (13 - dir)%8
+				elseif ents[i].name == "storage-tank" then
+					if ents[i].direction == 2 or ents[i].direction == 6 then
+						ents[i].direction = 4
+					else
+						ents[i].direction = 2
+					end
 				else
 					ents[i].direction = (12 - dir)%8
 				end
@@ -43,6 +49,12 @@ local function flip_h(player_index)
 				local dir = ents[i].direction or 0
 				if ents[i].name == "curved-rail" then
 					ents[i].direction = (9 - dir)%8
+				elseif ents[i].name == "storage-tank" then
+					if ents[i].direction == 2 or ents[i].direction == 6 then
+						ents[i].direction = 4
+					else
+						ents[i].direction = 2
+					end
 				else
 					ents[i].direction = (16 - dir)%8
 				end
