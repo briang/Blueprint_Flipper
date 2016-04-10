@@ -13,8 +13,8 @@ data.raw["gui-style"].default["blpflip_button_horizontal"] =
 {
     type = "button_style",
     parent = "button_style",
-    width = 32,
-    height = 32,
+    width = 36,
+    height = 36,
     top_padding = 6,
     right_padding = 0,
     bottom_padding = 0,
@@ -27,9 +27,10 @@ data.raw["gui-style"].default["blpflip_button_horizontal"] =
         {
             filename = "__blueprint_flipper__/graphics/gui.png",
             priority = "extra-high-no-scale",
-            width = 32,
-            height = 32,
+            width = 36,
+            height = 36,
 			x = 0,
+			y = 0,
         }
     },
     hovered_graphical_set =
@@ -39,9 +40,10 @@ data.raw["gui-style"].default["blpflip_button_horizontal"] =
         {
             filename = "__blueprint_flipper__/graphics/gui.png",
             priority = "extra-high-no-scale",
-            width = 32,
-            height = 32,
-			x = 32,
+            width = 36,
+            height = 36,
+			x = 0,
+			y = 36,
         }
     },
     clicked_graphical_set =
@@ -50,19 +52,25 @@ data.raw["gui-style"].default["blpflip_button_horizontal"] =
         monolith_image =
         {
             filename = "__blueprint_flipper__/graphics/gui.png",
-            width = 32,
-            height = 32,
-			x = 32,
+            width = 36,
+            height = 36,
+			x = 0,
+			y = 36,
         }
-    }
+    },
+	left_click_sound =
+	{
+		filename = "__core__/sound/gui-click.ogg",
+		volume = 1
+	}
 }
 
 data.raw["gui-style"].default["blpflip_button_vertical"] =
 {
     type = "button_style",
     parent = "button_style",
-    width = 32,
-    height = 32,
+    width = 36,
+    height = 36,
     top_padding = 6,
     right_padding = 0,
     bottom_padding = 0,
@@ -75,9 +83,10 @@ data.raw["gui-style"].default["blpflip_button_vertical"] =
         {
             filename = "__blueprint_flipper__/graphics/gui.png",
             priority = "extra-high-no-scale",
-            width = 32,
-            height = 32,
-            x = 64,
+            width = 36,
+            height = 36,
+            x = 36,
+			y = 0,
         }
     },
     hovered_graphical_set =
@@ -87,9 +96,10 @@ data.raw["gui-style"].default["blpflip_button_vertical"] =
         {
             filename = "__blueprint_flipper__/graphics/gui.png",
             priority = "extra-high-no-scale",
-            width = 32,
-            height = 32,
-            x = 96,
+            width = 36,
+            height = 36,
+            x = 36,
+			y = 36,
         }
     },
     clicked_graphical_set =
@@ -98,9 +108,15 @@ data.raw["gui-style"].default["blpflip_button_vertical"] =
         monolith_image =
         {
             filename = "__blueprint_flipper__/graphics/gui.png",
-            width = 32,
-            height = 32,
-            x = 96,
+            width = 36,
+            height = 36,
+            x = 36,
+			y = 36,
         }
-    }
+    },
+	left_click_sound =
+	{
+		filename = "__core__/sound/gui-click.ogg",
+		volume = 1
+	}
 }
