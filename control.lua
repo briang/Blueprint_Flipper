@@ -81,6 +81,9 @@ local function doButtons(player_index)
 		flow.add{type = "button", name = "blueprint_flip", style = "blpflip_button_horizontal"}
 		flow.add{type = "button", name = "blueprint_flop", style = "blpflip_button_vertical"}
 	end
+	if game.players[player_index].gui.top.blueprint_flipper_flow then
+		game.players[player_index].gui.top.blueprint_flipper_flow.destroy()
+	end
 end
 
 script.on_event(defines.events.on_gui_click,function(event)
