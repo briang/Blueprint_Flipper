@@ -8,7 +8,7 @@ local function getBlueprintCursorStack(player)
 	if cursor.valid_for_read and cursor.name == "blueprint" and cursor.is_blueprint_setup() then
 		return cursor
 	elseif cursor.valid_for_read and cursor.name == "blueprint-book" then
-		local bookInv = stack.get_inventory(defines.inventory.item_active)
+		local bookInv = cursor.get_inventory(defines.inventory.item_active)
 		if (bookInv[1].valid_for_read and bookInv[1].name == "blueprint") then
 			if bookInv[1].is_blueprint_setup() then
 				return bookInv[1]
@@ -158,7 +158,7 @@ script.on_event(defines.events.on_player_created,function(event) doButtons(event
 script.on_configuration_changed(function(data) for i=1,#game.players do doButtons(i) end end)
 script.on_init(function() for i=1,#game.players do doButtons(i) end end)
 
-script.on_event("blueprints_flip_horizontally",
-	function(event) flip_h(game.players[event.player_index]) end)
-script.on_event("blueprints_flip_vertically",
-	function(event) flip_v(game.players[event.player_index]) end)
+script.on_event("blueprint_hotkey_flip_horizontal",
+	function(event) flip_h(event.player_index) end)
+script.on_event("blueprint_hotkey_flip_vertical",
+	function(event) flip_v(event.player_index) end)
