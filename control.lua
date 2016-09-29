@@ -157,3 +157,8 @@ script.on_event(defines.events.on_player_created,function(event) doButtons(event
 
 script.on_configuration_changed(function(data) for i=1,#game.players do doButtons(i) end end)
 script.on_init(function() for i=1,#game.players do doButtons(i) end end)
+
+script.on_event("blueprints_flip_horizontally",
+	function(event) flip_h(game.players[event.player_index]) end)
+script.on_event("blueprints_flip_vertically",
+	function(event) flip_v(game.players[event.player_index]) end)
