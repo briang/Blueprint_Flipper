@@ -25,7 +25,7 @@ data.raw["gui-style"].default["blpflip_button_horizontal"] =
         type = "monolith",
         monolith_image =
         {
-            filename = "__blueprint_flipper__/graphics/gui.png",
+            filename = "__Blueprint_Flipper__/graphics/gui.png",
             priority = "extra-high-no-scale",
             width = 36,
             height = 36,
@@ -38,7 +38,7 @@ data.raw["gui-style"].default["blpflip_button_horizontal"] =
         type = "monolith",
         monolith_image =
         {
-            filename = "__blueprint_flipper__/graphics/gui.png",
+            filename = "__Blueprint_Flipper__/graphics/gui.png",
             priority = "extra-high-no-scale",
             width = 36,
             height = 36,
@@ -51,7 +51,7 @@ data.raw["gui-style"].default["blpflip_button_horizontal"] =
         type = "monolith",
         monolith_image =
         {
-            filename = "__blueprint_flipper__/graphics/gui.png",
+            filename = "__Blueprint_Flipper__/graphics/gui.png",
             width = 36,
             height = 36,
 			x = 0,
@@ -81,7 +81,7 @@ data.raw["gui-style"].default["blpflip_button_vertical"] =
         type = "monolith",
         monolith_image =
         {
-            filename = "__blueprint_flipper__/graphics/gui.png",
+            filename = "__Blueprint_Flipper__/graphics/gui.png",
             priority = "extra-high-no-scale",
             width = 36,
             height = 36,
@@ -94,7 +94,7 @@ data.raw["gui-style"].default["blpflip_button_vertical"] =
         type = "monolith",
         monolith_image =
         {
-            filename = "__blueprint_flipper__/graphics/gui.png",
+            filename = "__Blueprint_Flipper__/graphics/gui.png",
             priority = "extra-high-no-scale",
             width = 36,
             height = 36,
@@ -107,7 +107,7 @@ data.raw["gui-style"].default["blpflip_button_vertical"] =
         type = "monolith",
         monolith_image =
         {
-            filename = "__blueprint_flipper__/graphics/gui.png",
+            filename = "__Blueprint_Flipper__/graphics/gui.png",
             width = 36,
             height = 36,
             x = 36,
