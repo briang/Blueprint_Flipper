@@ -92,7 +92,7 @@ local function flip_h(player_index)
 						ents[i].direction = 2
 					end
 				elseif ents[i].name == "rail-signal" or ents[i].name == "rail-chain-signal" then
-					player.print("1. " .. ents[i].name .. ": " .. dir)
+					--player.print("1. " .. ents[i].name .. ": " .. dir)
 					if dir == 0 then
 						ents[i].direction = 4
 					elseif  dir == 1 then
@@ -106,15 +106,15 @@ local function flip_h(player_index)
 					elseif  dir == 7 then
 						ents[i].direction = 5
 					end
-					player.print("2. " .. ents[i].name .. ": " .. ents[i].direction)
+					--player.print("2. " .. ents[i].name .. ": " .. ents[i].direction)
 				elseif ents[i].name == "train-stop" then
-					player.print("1. " .. ents[i].name .. ": " .. dir)
+					--player.print("1. " .. ents[i].name .. ": " .. dir)
 					if dir == 0 then
 						ents[i].direction = 4
 					elseif  dir == 4 then
 						ents[i].direction = 0
 					end
-					player.print("2. " .. ents[i].name .. ": " .. ents[i].direction)
+					--player.print("2. " .. ents[i].name .. ": " .. ents[i].direction)
 				else
 					ents[i].direction = (16 - dir)%8
 				end
