@@ -7,5 +7,5 @@
   "homepage": "https://github.com/Humpfry/blueprint_flipper",
   "contact": "Humpfry@gmail.com",
   "description": "Mirrors/Flips a blueprint in hand",
-  "dependencies": "base >= 0.14.0"
+  "dependencies": ["base >= 0.14.0"]
 }

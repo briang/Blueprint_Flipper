@@ -59,6 +59,12 @@ local function flip_v(player_index)
 					ents[i].direction = (12 - dir)%8
 				end
 				ents[i].position.y = -ents[i].position.y
+				if ents[i].drop_position then
+					ents[i].drop_position.y = -ents[i].drop_position.y
+				end
+				if ents[i].pickup_position then
+					ents[i].pickup_position.y = -ents[i].pickup_position.y
+				end
 			end
 			cursor.set_blueprint_entities(ents)
 		end
@@ -119,6 +125,12 @@ local function flip_h(player_index)
 					ents[i].direction = (16 - dir)%8
 				end
 				ents[i].position.x = -ents[i].position.x
+				if ents[i].drop_position then
+					ents[i].drop_position.x = -ents[i].drop_position.x
+				end
+				if ents[i].pickup_position then
+					ents[i].pickup_position.x = -ents[i].pickup_position.x
+				end
 			end
 			cursor.set_blueprint_entities(ents)
 		end
