@@ -18,7 +18,7 @@ Credits to original authors: GopherAtl, Roktaal and Humpfry
 
 # Source code repository
 
-[github.com/briang/factorio-blueprint-flipper]
+[github.com/briang/factorio-blueprint-flipper]\
 (https://github.com/briang/factorio-blueprint-flipper)
 
 Please report bugs using the GitHub [issue
@@ -28,6 +28,6 @@ Bug reports, pull requests and forks all welcome
 
 # Changes
 
-0.2.0 Update for factorio 0.15
+0.2.0 Update for factorio 0.15<br/>
 0.1.8 Added Bob's Inserters Drop and Pickup
 0.1.7 Fixed Localization in config options.
